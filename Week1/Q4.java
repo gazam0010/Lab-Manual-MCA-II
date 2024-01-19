@@ -10,5 +10,6 @@ class Q4{
         double c = (ft - 32) / 1.8;
         
         System.out.println("Sum of two numbers:"+ c);
+        sc.close();
     }
 }

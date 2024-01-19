@@ -11,5 +11,6 @@ class Q3{
         int sum = a+b;
 
         System.out.println("Sum of two numbers:"+ sum);
+        sc.close();
     }
 }
