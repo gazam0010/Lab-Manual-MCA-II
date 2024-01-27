@@ -14,6 +14,7 @@ public class Q1 {
         }
 
         int i = 0;
+        System.out.print("The Fibonacci numbers are: ");
         do{
             int nxt = n1 + n2;
             n1 = n2;
