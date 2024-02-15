@@ -3,7 +3,7 @@ package Week5;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class OddAndEven{
+class OddAndEven{ // 
 	public  int countOfOdd = 0;
     public  int countOfEven = 0;
 
@@ -28,10 +28,10 @@ class TestOddAndEven{
             list.add(input.nextInt());
 
         }
-        //System.out.println(list);
+        System.out.println("List of Integers:" +list);
         for (int i = 0; i < list.size(); i++) {
             obj.addNumber(list.get(i));
-            System.out.println(list.get(i));
+            // System.out.println(list.get(i));
         }
         obj.toString(obj);
         // System.out.println("Number of Odd: x = " + obj.countOfOdd);
