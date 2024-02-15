@@ -1,4 +1,7 @@
 package Week5;
+
+import java.util.Scanner;
+
 class Commission{
     double sale;
 
@@ -28,7 +31,10 @@ class Commission{
 }
 public class Q4 {
     public static void main(String[] args) {
-        Commission cm1 = new Commission(50.0);
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter sales value: ");
+        double sl = in.nextDouble();
+        Commission cm1 = new Commission(sl);
         System.out.println("Commission is: " + cm1.commission());
     }
 }
