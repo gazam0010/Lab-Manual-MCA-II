@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class OddAndEven{
-	public static int countOfOdd = 0;
-    public static int countOfEven = 0;
+	public  int countOfOdd = 0;
+    public  int countOfEven = 0;
 
     public void addNumber(int n){
 			if(n % 2 != 0){
@@ -15,8 +15,8 @@ class OddAndEven{
             }
     }
     public void toString(OddAndEven obj){
-        System.out.println("Number of Odd: x = " + OddAndEven.countOfOdd);
-        System.out.println("Number of Even: y = " + OddAndEven.countOfEven);
+        System.out.println("Number of Odd: x = " + obj.countOfOdd);
+        System.out.println("Number of Even: y = " + obj.countOfEven);
     }
 }
 class TestOddAndEven{
@@ -26,10 +26,15 @@ class TestOddAndEven{
         ArrayList<Integer> list = new ArrayList<Integer>();
         while (input.hasNextInt()) {
             list.add(input.nextInt());
+
         }
+        //System.out.println(list);
         for (int i = 0; i < list.size(); i++) {
-            obj.addNumber(i);
+            obj.addNumber(list.get(i));
+            System.out.println(list.get(i));
         }
-        obj.toString();
+        obj.toString(obj);
+        // System.out.println("Number of Odd: x = " + obj.countOfOdd);
+        // System.out.println("Number of Even: y = " + obj.countOfEven);
     }
 }
