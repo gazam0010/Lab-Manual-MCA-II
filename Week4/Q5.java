@@ -11,6 +11,7 @@ public class Q5 {
 
         // construct box2
         Rectangle box2 = new Rectangle(10, 20, 40, 60);
+        // Rectangle b = new Rectangle(1, 1, 2, 2, 54, 54); //--- There is no constructor for creating rectangles 
         System.out.println(box2);
         // label box2 to r2
         Rectangle r2 = box2;
